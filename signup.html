@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sign Up</title>
+    <style>
+      #linkedInInput {
+        display: none;
+      }
+      .clicked:active {
+        color: #0116d4;
+      }
+      .notclicked {
+        color: #888888;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sign Up Page Header -->
+    <div
+      class="flex items-center justify-center w-10/12 mx-auto py-8 border-b-4 border-[#999]"
+    >
+      <img class="" src="./assets/Logo_b.png" alt="" />
+    </div>
+
+    <!-- Sign Up Section -->
+    <div
+      class="w-full items-center mx-auto flex flex-col my-8 px-10 md:flex-row md:items-start md:w-11/12 md:px-16"
+    >
+      <!-- Left Tab -->
+      <div class="py-12 md:w-1/2">
+        <h2
+          class="text-center font-poppins font-bold text-[#555] text-xl mb-8 md:text-start"
+        >
+          Join the 7,000 + techies in our wholesome Tech Hub
+        </h2>
+        <p
+          class="font-poppins font-light text-center text-base text-[#555] md:text-start md:w-10/12"
+        >
+          Thank you for your interest in our community,
+          <span class="text-blue-800">planet tech.</span> we offers our members
+          a store house of resources, networks, opportunities and events that
+          are exclusive to non- members.
+        </p>
+      </div>
+
+      <!-- The Right Tab -->
+      <div class="mx-auto md:w-1/2 md:border-l-4 md:border-l-[#999]">
+        <div class="mx-auto py-12 md:w-9/12">
+          <div
+            class="md:pt-12 gap-3 flex justify-between items-center px-28 md:px-12"
+          >
+            <a
+              href="#"
+              class="text-xl md:text-2xl lg:text-3xl cursor-pointer text-[#0066FF]"
+            >
+              <span
+                class="clicked font-bold transition-all delay-150 ease-in-out"
+              >
+                Sign up
+              </span>
+            </a>
+            <a
+              id="login"
+              href="/login.html"
+              class="hover:text-[#0066FF] text-xl md:text-2xl lg:text-3xl cursor-pointer"
+            >
+              <span
+                class="clicked hover:font-bold transition-all delay-150 ease-in-out"
+              >
+                Log in
+              </span>
+            </a>
+          </div>
+          <div class="flex mt-1 md:mt-2">
+            <div class="bg-[#0066FF] w-full h-[3px]"></div>
+            <div class="bg-[#0066FF] w-full h-[3px]"></div>
+          </div>
+
+          <!-- Sign Up form -->
+          <div id="form" class="flex-col pt-8">
+            <h2
+              class="font-poppins font-bold text-2xl text-center text-[#555] capitalize md:text-start"
+            >
+              Create a planet tech account
+            </h2>
+            <form action="./userpage.html" class="flex flex-col space-y-6 py-4">
+              <input
+                id="firstName"
+                type="text"
+                placeholder="First Name"
+                class="focus:outline-none py-4 border-b-2 border-b-[#555]"
+              />
+              <input
+                id="lastName"
+                type="text"
+                placeholder="Last Name"
+                class="focus:outline-none py-4 border-b-2 border-b-[#555]"
+              />
+              <input
+                id="email"
+                type="email"
+                placeholder="Email Address"
+                class="focus:outline-none py-4 border-b-2 border-b-[#555]"
+              />
+              <input
+                id="password"
+                type="password"
+                placeholder="Password"
+                class="focus:outline-none py-4 border-b-2 border-b-[#555]"
+              />
+              <input
+                id="confirmPassword"
+                type="password"
+                placeholder="Confirm Password"
+                class="focus:outline-none py-4 border-b-2 border-b-[#555]"
+              />
+              <button
+                type="submit"
+                id="signUpBtn"
+                class="bg-[#333E49] border-2 border-[#999] w-full text-center justify-center text-base text-white font-medium font-poppins py-2 rounded-xl capitalize flex items-center pl-6 gap-2 hover:bg-[#333]"
+              >
+                Sign Up
+              </button>
+
+              <!-- Horizontal line -->
+              <div class="flex items-center justify-center gap-4 py-8">
+                <hr class="border-2 border-[#333] w-5/12" />
+                <p
+                  class="text-center text-[#555] uppercase w-1/5 mx-auto font-bold"
+                >
+                  or
+                </p>
+                <hr class="border-2 border-[#999] w-5/12" />
+              </div>
+            </form>
+          </div>
+
+          <div class="flex flex-col gap-5">
+            <!-- Sign up with LinkedIn -->
+            <div>
+              <button
+                type="button"
+                id="linkedIn"
+                class="bg-white border-2 border-[#999] w-full text-center text-base text-[#333E49] font-medium py-2 rounded-xl capitalize font-poppins flex items-center pl-6 gap-2 hover:bg-gray-100"
+              >
+                <img src="./assets/LinkedIn.svg" alt="" class="w-5 h-5" />
+                sign up with LinkedIn
+              </button>
+              <div
+                id="linkedInInput"
+                class="flex flex-row items-end justify-center gap-2"
+              >
+                <input
+                  id="linkedInn"
+                  type="text"
+                  placeholder="Enter linked URL"
+                  class="w-full focus:outline-none py-4 border-b-2 border-b-[#555]"
+                />
+                <button
+                  id="gotoHome"
+                  class="bg-[#999] p-2 rounded-xl text-white font-bold hover:bg-[#555]"
+                >
+                  Enter
+                </button>
+              </div>
+            </div>
+            <!-- Sign up with Google -->
+            <div>
+              <button
+                class="bg-white border-2 border-[#999] w-full text-center text-base text-[#333E49] font-medium font-poppins py-2 rounded-xl capitalize flex items-center pl-6 gap-2 hover:bg-gray-100"
+              >
+                <img src="./assets//bi_google.svg" alt="" class="w-4 h-4" />
+                sign up with Google
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

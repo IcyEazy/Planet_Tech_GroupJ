@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <!-- Log In Page Header -->
+    <div
+      class="flex items-center justify-center w-10/12 mx-auto py-8 border-b-4 border-[#999]"
+    >
+      <img class="" src="./assets/Logo_b.png" alt="" />
+    </div>
+
+    <!-- Log In Section -->
+    <div
+      class="mx-auto flex flex-col justify-center my-8 px-8 md:flex-row md:px-16 md:w-11/12"
+    >
+      <!-- Left Tab -->
+      <div class="md:w-1/2">
+        <h2
+          class="font-poppins font-bold text-[#555] text-xl text-center mb-8 md:text-start"
+        >
+          Join the 7,000 + techies in our wholesome Tech Hub
+        </h2>
+        <p
+          class="font-poppins font-light text-base text-center text-[#555] md:w-10/12 md:text-start"
+        >
+          Thank you for your interest in our community,
+          <span class="text-blue-800">planet tech.</span> we offers our members
+          a store house of resources, networks, opportunities and events that
+          are exclusive to non- members.
+        </p>
+      </div>
+
+      <!-- The Right Tab -->
+      <div class="space-y-4 md:w-1/2 md:mx-auto">
+        <div
+          class="md:pt-12 gap-3 flex justify-between items-center px-28 md:px-12"
+        >
+          <a
+            href="./signup.html"
+            class="text-xl md:text-2xl lg:text-3xl cursor-pointer hover:text-[#0066FF]"
+          >
+            <span
+              class="clicked hover:font-bold transition-all delay-150 ease-in-out"
+            >
+              Sign up
+            </span>
+          </a>
+          <a
+            href="./login.html"
+            class="text-[#0066FF] font-bold text-xl md:text-2xl lg:text-3xl cursor-pointer"
+          >
+            <span
+              class="clicked hover:font-bold transition-all delay-150 ease-in-out"
+            >
+              Log in
+            </span>
+          </a>
+        </div>
+        <form
+          id="loginForm"
+          action="./userpage.html"
+          class="flex flex-col space-y-6 py-4"
+        >
+          <div class="flex flex-col gap-2">
+            <input
+              id="email"
+              type="text"
+              placeholder="Enter Your Email Address"
+              class="focus:outline-none py-4 border-b-2 border-b-[#555]"
+            />
+            <div id="emailError" class="error"></div>
+          </div>
+          <div class="flex flex-col gap-2">
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              class="focus:outline-none py-4 border-b-2 border-b-[#555]"
+            />
+            <div id="passwordError" class="error"></div>
+          </div>
+          <button
+            type="submit"
+            id="logInBtn"
+            class="bg-[#333E49] border-2 border-[#999] w-full text-center justify-center text-base text-white font-medium font-poppins py-2 rounded-xl capitalize flex items-center pl-6 gap-2"
+          >
+            Log In
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./login.js"></script>
+  </body>
+</html>
